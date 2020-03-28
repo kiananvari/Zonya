@@ -1,0 +1,5 @@
+
+#ignoring chache files for push
+
+./.idea/
+./.cache/
