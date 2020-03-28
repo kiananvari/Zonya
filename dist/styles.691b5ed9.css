@@ -1,0 +1,590 @@
+@media screen and (max-width: 600px) {
+  intro .main h3 {
+    font-size: 15px !important;
+  }
+  intro .main h4 {
+    font-size: 5px !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main > .info {
+    padding-left: 40px !important;
+  }
+
+  intro .main {
+    color: #80C7C0 !important;
+  }
+  intro .main h3 {
+    font-size: 35px !important;
+  }
+  intro .main h4 {
+    font-size: 20px !important;
+  }
+
+  service .main .items ul {
+    margin: auto;
+    width: 80% !important;
+  }
+  service .main .items li {
+    width: 50% !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  customers .detail {
+    padding: 2px !important;
+    overflow: auto;
+  }
+  customers table tr td span.name.left {
+    position: relative;
+    color: black;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  customers table tr td span.name.left span.info {
+    position: absolute;
+    color: gray;
+    font-weight: 300;
+    font-size: 15px;
+    top: 20px;
+    right: 0px !important;
+  }
+  customers table tr td span.name.right {
+    position: relative;
+    color: black;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  customers table tr td span.name.right span.info {
+    position: absolute;
+    color: gray;
+    font-weight: 300;
+    font-size: 15px;
+    top: 20px;
+    left: 0px !important;
+  }
+}
+@media screen and (max-width: 1050px) {
+  header div.logo {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  header div.logo img {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 0 !important;
+    width: 95px;
+    height: 55px;
+  }
+  header ul {
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+    flex-wrap: wrap;
+    padding-left: 30px;
+  }
+}
+*, body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+button:focus {
+  outline: 0;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #2C2D30;
+}
+header div.logo {
+  display: inline-block;
+  margin: auto;
+}
+header div.logo img {
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 210px;
+  width: 95px;
+  height: 55px;
+}
+header ul {
+  margin-top: 30px;
+  float: right;
+  list-style: none;
+}
+header ul li {
+  position: relative;
+  display: inline-block;
+  margin-right: 50px;
+}
+header ul li a {
+  color: lightgray;
+  font-size: 15px;
+  text-decoration: none;
+}
+header ul li a:hover {
+  color: lightgray;
+  text-decoration: none;
+}
+header ul li:after {
+  position: absolute;
+  color: gray;
+  left: -25px;
+  bottom: 3px;
+  content: ".";
+}
+header ul li:first-child:after {
+  display: none;
+}
+
+intro .main {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/backImage.e7b5d4c0.jpg");
+  background-position: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: gray;
+}
+intro .main div {
+  position: relative;
+  margin: auto;
+}
+intro .main div h3 {
+  color: white;
+  font-size: 40px;
+  font-weight: 300;
+}
+intro .main div h4 {
+  color: white;
+  font-size: 25px;
+  font-weight: 200;
+  margin-top: 20px;
+}
+intro .main div button.transparent {
+  position: absolute;
+  color: white;
+  background-color: transparent;
+  border-color: white;
+  border-radius: 5px;
+  padding: 10px 15px;
+  left: 40%;
+  top: 210px;
+}
+
+service {
+  width: 100%;
+  height: 400px;
+}
+service .main {
+  width: 100%;
+  background-color: white;
+}
+service .main div.service {
+  text-align: center;
+  padding-top: 60px;
+  background-color: white;
+}
+service .main div.items ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 90%;
+  margin: auto;
+}
+service .main div.items ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px 40px 0px;
+  float: left;
+  width: 25%;
+}
+service .main div.items ul li .item {
+  width: 80%;
+}
+service .main div.items ul li .item span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+service .main div.items ul li .item span:after {
+  position: absolute;
+  color: lightgray;
+  top: -40px;
+  content: "_____";
+}
+service .main div.items ul li .item p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  color: #A7A8A9;
+}
+service .main div.items ul li .item img {
+  margin: auto;
+  padding: 30px;
+  display: block;
+}
+
+features div.main {
+  background-color: #F0F1F2;
+  padding-bottom: 90px;
+}
+features div.main h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+}
+features div.main span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+features div.main img {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+features div.main p {
+  width: 50%;
+  margin: auto;
+  background-color: #F0F1F2;
+  text-align: center;
+  margin-bottom: 50px;
+}
+features div.main .actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+features div.main .actions button.black {
+  color: white;
+  font-weight: 300;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 9px 15px;
+  margin-right: 20px;
+  background-color: #474750;
+}
+features div.main .actions button.green {
+  color: white;
+  font-weight: 300;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 9px 20px;
+  background-color: #81C6C0;
+}
+
+works div.main {
+  padding-top: 100px;
+  background-color: #2C2D31;
+  width: 100%;
+  height: 630px;
+}
+works div.main .info {
+  float: left;
+  width: 40%;
+  padding-left: 110px;
+  height: 100%;
+  margin-right: 20px;
+  overflow: auto;
+}
+works div.main .info h5 {
+  color: white;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+works div.main .info span {
+  color: lightgray;
+  font-weight: 300;
+  font-size: 20px;
+}
+works div.main .info p {
+  color: lightgray;
+  font-weight: 300;
+  margin-top: 30px;
+}
+works div.main .info button.transparent {
+  color: gray;
+  background-color: transparent;
+  border-color: gray;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 30px;
+  left: 300px;
+  top: 210px;
+}
+works div.main .gallery {
+  width: 55%;
+  height: 80%;
+  box-sizing: border-box;
+  overflow: auto;
+  padding-left: 40px;
+}
+works div.main .gallery .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+works div.main .gallery .column {
+  flex: 100%;
+  max-width: 33%;
+  padding: 0px 2px;
+}
+works div.main .gallery .column img {
+  margin-bottom: 4px;
+  vertical-align: middle;
+  height: 50%;
+  width: 100%;
+}
+
+customers .main {
+  position: relative;
+  width: 100%;
+  height: 810px;
+  background-color: #F0F1F2;
+}
+customers .main .header h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+  font-weight: 300;
+  font-size: 25px;
+}
+customers .main .header span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: gray;
+}
+customers .main .customers {
+  margin: auto;
+  width: 90%;
+  height: 75%;
+}
+customers .main .timeline {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 90%;
+  background-color: #F0F1F2;
+}
+customers .main .timeline table {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+}
+customers .main .timeline table tr {
+  height: 200px;
+}
+customers .main .timeline table td.name.left {
+  text-align: right;
+}
+customers .main .timeline table td.detail.right {
+  text-align: center;
+}
+customers .main .timeline table td.name.right {
+  text-align: left;
+}
+customers .main .timeline table td.detail.left {
+  text-align: center;
+}
+customers .main .timeline table td.img {
+  width: 10%;
+  margin: auto;
+  text-align: center;
+}
+customers .main .timeline table td {
+  width: 30%;
+}
+customers .main .timeline table td span.name.left {
+  position: relative;
+  color: black;
+  font-weight: 300;
+  font-size: 18px;
+}
+customers .main .timeline table td span.name.left span.info {
+  position: absolute;
+  color: gray;
+  font-weight: 300;
+  font-size: 15px;
+  top: 20px;
+  right: -15px;
+}
+customers .main .timeline table td span.name.right {
+  position: relative;
+  color: black;
+  font-weight: 300;
+  font-size: 18px;
+}
+customers .main .timeline table td span.name.right span.info {
+  position: absolute;
+  color: gray;
+  font-weight: 300;
+  font-size: 15px;
+  top: 20px;
+  left: -15px;
+}
+customers .main .timeline table td .detail {
+  position: relative;
+  background-color: white;
+  width: 80%;
+  height: 130px;
+  border-radius: 2px;
+  background-color: white;
+  margin-top: 60px;
+  padding: 15px;
+}
+customers .main .timeline table td .detail.left {
+  left: 20%;
+}
+customers .main .timeline table td .detail.right:after {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  top: 15%;
+  left: -10px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  z-index: 1;
+}
+customers .main .timeline table td .detail.left:after {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  top: 15%;
+  right: -10px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+  z-index: 1;
+}
+customers .main .timeline table img {
+  border-radius: 40px;
+  z-index: 999 !important;
+}
+customers .main .timeline table:after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 5%;
+  left: 50%;
+  background-color: lightgray;
+  width: 1px;
+  height: 90%;
+  z-index: -1;
+}
+
+blog .main {
+  width: 100%;
+  height: 650px;
+  padding-top: 100px;
+  background-color: #F0F1F2;
+  padding-bottom: 20px;
+}
+blog .main .info {
+  float: left;
+  width: 35%;
+  padding-left: 110px;
+  height: 100%;
+  margin-right: 20px;
+  overflow: auto;
+}
+blog .main .info h5 {
+  color: black;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+blog .main .info span {
+  color: gray;
+  font-weight: 300;
+  font-size: 20px;
+}
+blog .main .info p {
+  color: gray;
+  font-weight: 300;
+  margin-top: 30px;
+}
+blog .main .info button.green {
+  color: white;
+  font-size: 15px;
+  background-color: #81C6C0;
+  border-color: #81C6C0;
+  border-radius: 5px;
+  padding: 8px 25px;
+  margin-top: 30px;
+  left: 300px;
+  top: 210px;
+}
+blog .main .posts {
+  width: 60%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+}
+blog .main .posts .row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 100%;
+}
+blog .main .posts .column {
+  flex: 100%;
+  max-width: 33%;
+}
+blog .main .posts .column .item {
+  background-color: white;
+  margin-left: 20px;
+  height: 100%;
+}
+blog .main .posts .column .item img {
+  width: 100%;
+}
+blog .main .posts .column .item .detail {
+  padding: 25px 20px;
+}
+blog .main .posts .column .item .detail h5 {
+  font-weight: 400;
+  font-size: 15px;
+}
+blog .main .posts .column .item .detail p {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+footer {
+  background-color: #2C2D31;
+  padding: 15px 0px;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}
+
+
+
+
+/*# sourceMappingURL=/styles.691b5ed9.css.map */
