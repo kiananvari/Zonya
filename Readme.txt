@@ -1,4 +1,4 @@
-Zona - FrontEnd Project
+Zonya - FrontEnd Project
 
 1) 
 
